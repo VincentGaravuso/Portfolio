@@ -1,0 +1,66 @@
+<div class="main">
+  <div class="heading-home">
+    <img src="../../assets/portrait.jpg" class="avatar"/>
+  </div>
+  <div class="heading-home">
+    <div>
+      <h1 style="margin:10px">Vincent Garavuso</h1>
+    </div>
+    <div>
+      <a href='https://www.linkedin.com/in/vincentgaravuso/' target="_blank">
+        <img src="../../assets/linkedin.svg" class="social-icons" />
+      </a>
+      <a href='https://github.com/vincentGaravuso' target="_blank">
+        <img src="../../assets/github-logo.svg" class="social-icons" />
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Lower Portion -->
+
+<div class="lower">
+
+  <!-- Main display deck -->
+
+  <div style="justify-content:center; display:flex; padding-left:1rem;padding-right:1rem;">
+    <div class="card-deck" style="margin-top:-4rem;">
+      <div class="card shadow-lg" style="max-width:30rem;">
+        <div class="card-body" style="min-width:15rem">
+          <div style="margin-bottom: 15px;">
+            <img src="../../assets/counter-strike-global-offensive-csgo-icon-8.png" class="rounded-circle" style="width:50px;height:50px; vertical-align:middle;display:inline-block; border:2px solid black; " />
+            <h5 style="vertical-align: middle; display: inline-block; margin-left:10px; margin-bottom:0rem!important" class="card-title">CSGO Bot</h5>
+          </div>
+          <p class="card-text">Displays video game stats from <strong>Counter Strike: Global Offensive</strong> on <strong>Discord</strong> using commands.</p>
+          <p class="card-text">The bot uses Tracker.gg's CSGO stats API found <a href="https://tracker.gg/developers/docs/titles/csgo" target="_blank" class="text-decoration-none">here</a>.</p>
+          <a href="https://discord.com/api/oauth2/authorize?client_id=746502575955771463&permissions=0&scope=bot" target="_blank" class="card-link">Try Bot</a>
+          <a href="https://github.com/VincentGaravuso/CSGO-Discord-Bot" target="_blank" class="card-link">Repo</a>
+        </div>
+      </div>
+      <div class="card shadow-lg" style="max-width:30rem;">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Display Repos -->
+ <div class="mt-5" style="text-align: center;">
+   <h3>All Public Repositories:</h3>
+ </div>
+  <div class="card-columns custom-columns" style="justify-content:center; margin:5rem; margin-top:1rem;">
+    <div *ngFor="let repo of userRepos" class="card shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">{{repo.name}}</h5>
+          <p class="card-test">{{repo.description}}</p>
+          <p class="card-text">
+            <small class="text-muted">Last Updated: {{repo.updated_at | date: 'MM/dd/yy'}}</small>
+            <a href="{{repo.html_url}}" target="_blank" class="card-link stretched-link" style="float:right">Repo</a>
+          </p>
+        </div>
+    </div>
+  </div>
+</div>
