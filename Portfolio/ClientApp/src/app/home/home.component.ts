@@ -10,6 +10,9 @@ import { Repo } from '../../dataModels/github';
 
 export class HomeComponent implements OnInit {
   public userRepos: Repo[] = [];
+
+  public isCollapsed = false;
+
   constructor(private githubService: GithubService) {
 
   }

@@ -36,12 +36,13 @@ code {
   text-align: center;
   color: white;
   background: #212529;
-  min-height: 425px;
+  min-height: 470px;
 }
 
 .heading-home {
   text-align: center;
   margin: 0px;
+  padding-top:1rem;
 }
 
 .avatar {
