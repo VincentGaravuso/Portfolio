@@ -28,7 +28,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\professional\professional.component.ts" />
     <None Remove="ClientApp\src\dataModels\github.ts" />
+    <None Remove="ClientApp\src\dataModels\repositoryLanguages.ts" />
   </ItemGroup>
 
   <ItemGroup>

@@ -28,4 +28,12 @@ export class GithubService {
   getRepositories(username: string) {
     return this.http.get<Repo[]>(this.apiUrl + '/' + username + '/repos');
   }
+
+  /**
+   * Get Languages % of repository
+   * @param repoUrl
+   */
+  getRepositoryLanguages(repoUrl: string) {
+    return this.http.get(repoUrl);
+  }
 }
